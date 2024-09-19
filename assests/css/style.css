@@ -171,15 +171,7 @@ img {
 /* Change background header */
 .scroll-header {
     background-color: var(--white-dark-color) !important;
-    box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1) !important;
-}
-
-.scroll-header .nav-link {
-    color: var(--blue-color) !important;
-}
-
-.scroll-header .navbar-toggler {
-    color: var(--blue-color) !important;
+    box-shadow: 0 4px 10px hsla(228, 4%, 15%, .1) !important;
 }
 
 .home {
