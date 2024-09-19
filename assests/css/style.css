@@ -137,7 +137,7 @@ img {
 }
 
 .navbar-nav {
-    background-color: transparent !important;
+    background-color: var(--white-color) !important;
 }
 
 .navbar-brand img {
