@@ -128,7 +128,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--blue-color) !important;
+    background-color: var(--white-color) !important;
     z-index: var(--z-fixed);
 }
 
@@ -147,7 +147,7 @@ img {
 }
 
 .nav-link {
-    color: var(--white-dark-color) !important;
+    color: var(--blue-color) !important;
     font-size: var(--small-font-size) !important;
     font-weight: var(--font-medium) !important;
 }
@@ -156,7 +156,7 @@ img {
     padding-right: 0 !important;
     margin-bottom: 5px;
     border: none !important;
-    color: var(--white-dark-color) !important;
+    color: var(--blue-color) !important;
 }
 
 .navbar-toggler:focus {
