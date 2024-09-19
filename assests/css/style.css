@@ -1,0 +1,196 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    --white-color: #ffffff;
+    --white-dark-color: #F9F9F9;
+    --blue-color: #01005C;
+    --grey-color: #5E5E5E;  
+    --black-color: #1A1A1A;
+
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --header-font: "Inter", sans-serif;
+    --body-font: "Source Sans 3", sans-serif;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .625rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+        --big-font-size: 4.5rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 2.25rem;
+        --h3-font-size: 1.5rem;
+        --normal-font-size: 1.375rem;
+        --small-font-size: 1rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    background-color: var(--white-color);
+    color: var(--grey-color);
+    line-height: 1.5 !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+h1, h2, h3 {
+    font-family: var(--header-font) !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+    padding: 3.5rem 0 2rem;
+}
+
+.section-title {
+    color: var(--black-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+}
+
+.section-subtitle {
+    color: var(--grey-color);
+    font-size: var(--h3-font-size);
+}
+
+.text {
+    font-size: var(--small-font-size);
+}
+
+.button {
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+.button:hover {
+    color: var(--blue-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--blue-color);
+}
+
+.main {
+    overflow: hidden; /* For the animations ScrollReveal*/
+}
+
+/* --=== Header and Nav === */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--blue-color) !important;
+    z-index: var(--z-fixed);
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.navbar-nav {
+    background-color: transparent !important;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 70px;
+
+}
+
+.nav-link {
+    color: var(--white-dark-color) !important;
+    font-size: var(--small-font-size) !important;
+    font-weight: var(--font-medium) !important;
+}
+
+.navbar-toggler {
+    padding-right: 0 !important;
+    margin-bottom: 5px;
+    border: none !important;
+    color: var(--white-dark-color) !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none !important;
+}
+
+.navbar-toggler svg {
+    font-size: 1.25rem;
+}
+
+/* Change background header */
+.scroll-header {
+    background-color: var(--white-dark-color) !important;
+    box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1) !important;
+}
+
+.scroll-header .nav-link {
+    color: var(--blue-color) !important;
+}
+
+.scroll-header .navbar-toggler {
+    color: var(--blue-color) !important;
+}
+
+.home {
+    padding: 14rem 0 10rem;
+    background: url(../img/Hero1-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-title {
+    font-size: var(--big-font-size);
+    color: var(--white-dark-color);
+}
