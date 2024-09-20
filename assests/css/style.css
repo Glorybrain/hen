@@ -11,19 +11,19 @@
     --blue-color: #01005C;
     --grey-color: #5E5E5E;  
     --black-color: #1A1A1A;
+    --yellow-color: hsl(32, 83%, 53%);
 
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --header-font: "Inter", sans-serif;
-    --body-font: "Source Sans 3", sans-serif;
-    --big-font-size: 2.75rem;
-    --h1-font-size: 1.75rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .625rem;
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -38,12 +38,12 @@
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
     :root {
-        --big-font-size: 4.5rem;
-        --h1-font-size: 2.5rem;
-        --h2-font-size: 2.25rem;
-        --h3-font-size: 1.5rem;
-        --normal-font-size: 1.375rem;
-        --small-font-size: 1rem;
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
         --smaller-font-size: .813rem;
     }
 }
@@ -83,7 +83,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-    padding: 3.5rem 0 2rem;
+    padding: 4.5rem 0 2rem;
 }
 
 .section-title {
@@ -174,6 +174,7 @@ img {
     box-shadow: 0 4px 10px hsla(228, 4%, 15%, .1) !important;
 }
 
+/* --=== Home === */
 .home {
     padding: 14rem 0 10rem;
     background: url(../img/Hero1-1.jpeg);
@@ -183,6 +184,62 @@ img {
 }
 
 .home-title {
-    font-size: var(--big-font-size);
+    font-size: var(--biggest-font-size);
     color: var(--white-dark-color);
+}
+
+/* --=== About === */
+.about-title {
+    color: var(--blue-color);
+    margin-bottom: 1rem !important;
+}
+
+.about-text {
+    margin-bottom: 2.25rem !important;
+}
+
+/* --=== Services === */
+.service-title {
+    color: var(--blue-color);
+    font-weight: var(--font-bold) !important;
+}
+
+.service-card {
+    padding: 15px;
+    border: 3px solid var(--blue-color);
+    border-radius: 10px;
+}
+
+.service-icon {
+    color: var(--yellow-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.service-subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--blue-color);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 10px;
+}
+
+.service-text {
+    color: var(--text-color-light);
+    font-size: var(--normal-font-size);
+    line-height: 1.5;
+}
+
+
+@media (max-width: 575.98px) {
+        
+}
+
+@media (min-width: 768px) {
+    .about-img img{
+        /* height: 300px; */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
 }
