@@ -229,15 +229,26 @@ img {
     line-height: 1.5;
 }
 
+/* --=== Value === */
+.value-title {
+    color: var(--blue-color);
+    font-weight: var(--font-bold) !important;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 575.98px) {
         
 }
 
 @media (min-width: 768px) {
-    .about-img img{
-        /* height: 300px; */
-    }
+    
 }
 
 @media screen and (min-width: 1024px) {
